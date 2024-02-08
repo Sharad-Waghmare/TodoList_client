@@ -1,4 +1,3 @@
-// todoSlice.js
 import { createSlice } from "@reduxjs/toolkit";
 import { addTodo, getTodos, updateTodo, deleteTodo } from "./todoAction";
 

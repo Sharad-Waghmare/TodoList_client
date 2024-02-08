@@ -2,6 +2,7 @@ import React from "react";
 
 const Todo = ({ todo, updateTodo, deleteTodo }) => {
   const checkTodo = todo.status ? "line-through" : "";
+  console.log(todo, "todolist");
   
   const handleCompleteTodo = () => {
     const updatedTodo = { ...todo, status: true };

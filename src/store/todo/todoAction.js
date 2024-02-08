@@ -35,11 +35,13 @@ export const getTodos = createAsyncThunk(
 
 export const updateTodo = createAsyncThunk(
   "todos/updateTodo",
+
   async (todoData, { rejectWithValue }) => {
     try {
-      const { id, name, description, status } = todoData;
+      const { _id, name, description, status } = todoData;
+      console.log(todoData, "submit")
       const response = await axios.put(
-        `${URL}/updatetodo/${id}`,
+        `${URL}/updatetodo/${_id}`,
         { name, description, status }
       );
       const updatedTodo = response.data; 
