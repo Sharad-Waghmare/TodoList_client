@@ -1,6 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-const URL = "http://localhost:8005/todo";
+const URL = "https://todo-list-server-e84n.vercel.app/todo";
+
 
 export const addTodo = createAsyncThunk(
   "addTodo",
